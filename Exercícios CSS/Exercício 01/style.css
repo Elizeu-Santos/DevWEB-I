@@ -1,0 +1,40 @@
+#titulo {
+    width: 100%;
+    height: 100%;
+    background: rgb(129,124,210);
+    background: linear-gradient(90deg, rgba(129,124,210,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 0px;
+}
+
+.texto {
+    color: #fff;
+    text-align: center;
+}
+
+#conteudo {
+    width: 100%;
+    height: 400px;
+}
+
+h3 {
+    color: navy;
+}
+
+#rodape {
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+    padding-top: 10px;
+}
+
+.texto_rodape {
+    text-align: center;
+}
+
+a:link {
+    color:yellow;
+}
+
+a:hover{
+    background-color: black;
+}
