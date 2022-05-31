@@ -4,10 +4,12 @@
     background: rgb(129,124,210);
     background: linear-gradient(90deg, rgba(129,124,210,1) 0%, rgba(0,212,255,1) 100%);
     padding-top: 30px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .texto {
-    color: #fff;
+    color: rgb(4, 4, 138);
     text-align: center;
 }
 
@@ -30,4 +32,12 @@ h3 {
 
 .texto_rodape {
     text-align: center;
+}
+
+a:-webkit-any-link {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: yellow;
 }
