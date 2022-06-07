@@ -1,0 +1,14 @@
+.container {
+    /*Ocupa 100% do espaço*/
+    display: inline-grid;
+
+    /*Ocupa apenas os tamanhos dos elementos*/
+    grid-template-columns: 100px 100px 100px;
+    border: 2px solid maroon;
+    
+}
+
+.container p {
+    border: 1px solid #ccc;
+}
+
