@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(255, 255, 255);
+  }
+
+#container {
+    margin: auto;
+    background-color: white;
+    max-width: 1000px;
+}
+
+#header {
+    background-color: rgb(202, 168, 124);
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+#header h1 {
+    margin: 0px;
+    color: navy;
+}
+
+#header li {
+    display: inline;
+}
+
+#header a {
+    color: yellow;
+}
+
+#header a:hover {
+    background-color: rgb(230, 182, 178);
+}
+
+#content {
+    padding: 10px;
+    text-align: justify;
+}
+
+.menu-border {
+    padding-right: 10px;
+    border-right: 1px solid rgb(128, 15, 0);
+  }
+
+#content h2 {
+    color: navy;
+    border-bottom: 1px solid navy;
+}
+
+#footer {
+    background-color: rgb(165, 160, 160);
+    text-align: center;
+    font-size: small;
+    padding: 1.5em;
+}

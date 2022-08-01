@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+.container {
+    display: grid;
+    grid-template-columns: minmax(3px, auto) 150px minmax(3px, 740px) minmax(3px, auto);
+    grid-template-areas:
+      ". header header ."
+      ". nav-left content ."
+      ". footer footer .";
+}
+
+.container h1,
+  h2 {
+    color: navy;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(238, 198, 146);
+}
+
+.header h1 {
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header ul {
+    margin-top: 0px;
+    list-style: none;
+}
+
+.header li {
+    display: inline;
+}
+
+.header a {
+    color: white;
+    padding: 2px;
+    color: yellow;
+}
+
+.header a:hover {
+    background-color: rgb(190, 125, 28);
+    border-radius: 4px;
+}
+
+.header span {
+    margin-left: 4px;
+    border-left: 1px solid navy;
+}
+
+.nav-left {
+    grid-area: nav-left;
+    background-color: white;
+}
+
+.nav-left ul {
+    background-color: rgb(238, 198, 146);
+    margin: 0px;
+    list-style-type: none;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding: 10px;
+}
+
+.nav-left li {
+    color: blue;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.nav-left a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 0px;
+    margin: 10px;
+}
+
+.nav-left li:hover {
+    background-color: rgb(157, 243, 157);
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.content h2 {
+    color: navy;
+    border-bottom: 1px solid navy;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(195, 226, 218);
+    text-align: center;
+    padding: 1.0em;
+}

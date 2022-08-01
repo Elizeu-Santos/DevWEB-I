@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Formulário de cadastro.</h1>
+      <div class="cadastro-formulario">
+        <form class="cadastro">
+          <label for="name">Nome</label>
+
+          <div>
+            <input type="text" name="name" id="name" required minlength="2" maxlength="100" placeholder="Nome">
+            <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="100"
+              placeholder="Sobrenome">
+          </div>
+
+          <label for="username">Escolher um nome de usuário</label>
+          <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+          <label for="password1">Crie uma senha</label>
+          <input type="password" name="password1" id="password1" minlength="8" maxlength="32" required>
+          <label for="password2">Confirme sua senha</label>
+          <input type="password" name="password2" id="password2" minlength="8" maxlength="32" required>
+          <label for="data-nascimento">Data de nascimento</label>
+
+          <div class="data-nascimento">
+            <input type="number" name="dia-nascimento" id="dia-nascimento" min="1" max="31" required placeholder="Dia">
+            <select name="mes-nascimento" id="mes-nascimento" required>
+              <option value="" disabled selected hidden>Mês</option>
+              <option value="1">1️⃣ Janeiro</option>
+              <option value="2">2️⃣ Fevereiro</option>
+              <option value="3">3️⃣ Março</option>
+              <option value="4">4️⃣ Abril</option>
+              <option value="5">5️⃣ Maio</option>
+              <option value="6">6️⃣ Junho</option>
+              <option value="7">7️⃣ Julho</option>
+              <option value="8">8️⃣ Agosto</option>
+              <option value="9">9️⃣ Setembro</option>
+              <option value="10">🔟 Outubro</option>
+              <option value="11">1️⃣1️⃣ Novembro</option>
+              <option value="12">1️⃣2️⃣ Dezembro</option>
+            </select>
+            <input type="number" name="ano-nascimento" id="ano-nascimento" min="1920" max="2021" required
+              placeholder="Ano">
+          </div>
+          <label for="sexo" required>Sexo</label>
+          <select name="sexo" id="sexo">
+            <option value="" disabled selected hidden>Sou do sexo...</option>
+            <option value="Feminino">♀️ Feminino</option>
+            <option value="Masculino">♂️ Masculino</option>
+            <option value="Outro">♾ Outros</option>
+          </select>
+          <label for="celular">Celular</label> 
+          <input placeholder="+55 | DD + Telefone" type="text" minlength="9" maxlength="20" required>
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>Elizeu Santos - IFPR 2022</p>
+  </footer>
+  
+  </html>

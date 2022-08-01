@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Elizeu Santos</title>
+</head>
+
+<body>
+
+    <h1>Elizeu Store 💰 </h1>
+
+    <p>Digite o valor da sua compra em dólares 💸:</p>
+    <form>
+        <fieldset>
+            <label>Dólares</label>
+            <input type="text" id="dolares" />			
+            <input type="submit"  onclick="conversor()" />
+        </fieldset>
+    </form>
+  
+</body>
+<script type="text/javascript">
+    var reais = 0;
+    
+    function conversor(){
+
+        var dolares = document.getElementById('dolares').value;
+        
+        dolares = parseFloat(dolares);
+        
+        reais = dolares / 1;
+        
+        console.log(reais);
+        
+        alert(reais + " reais");
+    }
+</script>
+
+</html>

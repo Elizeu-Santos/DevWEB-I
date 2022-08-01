@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(163, 230, 158);
+}
+
+.form-ifpr {
+    display: inline-grid;
+    grid-template-columns: max-content max-content;
+    padding: 20px 50px;
+    gap: 1.0rem;
+    background-color: #80ff79;
+    border: 2px solid #1c6421;
+    border-radius: 5px;
+}
+
+.form-ifpr label {
+    justify-self: end;
+    color: rgb(2, 2, 95);
+}
+
+.form-ifpr input, select {
+    width: max-content;
+}

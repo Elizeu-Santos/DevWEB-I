@@ -1,0 +1,54 @@
+body {
+    background: url(./Terra.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin: auto;
+    width: max-content;
+}
+
+.container {
+    border-radius: 3px;
+    border: 1px solid rgb(106, 231, 225);
+    background-color: rgba(10, 218, 166, 0.15);
+}
+
+.container p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.cadastro {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    padding: 20px;
+    gap: 10px;
+}
+
+.cadastro label {
+    margin: auto 0px;
+    color: rgb(106, 231, 225);
+    justify-self: end;
+}
+
+.cadastro label, input, select {
+    padding: 5px;
+}
+
+.cadastro input, select {
+    border-radius: 2px;
+    border: 2px solid rgb(0, 96, 175, .8);
+  }
+
+input.add {
+    grid-column: 1;
+    width: max-content;
+    padding: 6px 20px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    color: rgb(9, 112, 98);
+    background-color: rgb(163, 235, 235);
+}

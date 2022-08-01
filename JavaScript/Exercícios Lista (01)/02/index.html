@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Elizeu Santos</title>
+</head>
+
+<body>
+
+    <h1>Elizeu Store 🛒 </h1>
+
+    <label for="valor"> Digite o valor da compra: </label>
+    <br>
+
+    <input type="text" id="valor" name="valor" required onfocus="fn(this)" onblur="fs(this)">
+    <br>
+    
+    <br> Qual sua forma de pagamento?
+    <br>
+
+    <input type="radio" name="pagamento" id="debito" value="debito">
+    <label for="debito"> Débito </label>
+    <br>
+
+    Desconto e valor a pagar:
+    <br>
+    <input type="text" id="pagar" name="pagar" disabled>
+    <input id="botao1" type="button" value="Calcular" onclick="calcular()" onmouseover="botao(this)"
+        onmouseout="botao(this)">
+</body>
+<script>
+
+function calcular(){
+	var x = document.getElementById("valor");
+	var pagar = document.getElementById("pagar");
+	var d = document.getElementById("debito");
+
+		var p = Number(x.value);
+		var y = p;
+		var s=0;
+			
+			if(d.checked){
+				y = (y*0.10);
+				s= p-y;
+			}
+
+	pagar.value= "Desconto: "+y+" Pagar: "+s;
+}
+
+</script>
+
+</html>

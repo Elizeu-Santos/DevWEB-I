@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-ifpr">
+            <label for="data-nascimento">Data de nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento">
+
+            <label for="escolaridade">Escolaridade</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="EF">Ensino Fundamental</option>
+                <option value="EM">Ensino Médio</option>
+                <option value="ES">Ensino Superior</option>
+                <option value="PG">Pós Graduação</option>
+            </select>
+
+            <label for="status-escolaridade">Situação da Escolaridade</label>
+            <div class="options">
+                <label for="status-escolaridade">
+                    <input type="radio" value="completo" name="status-escolaridade">
+                    Completo
+                </label>
+
+                <label for="status-escolaridade">
+                    <input type="radio" value="incompleto" name="status-escolaridade">
+                    Incompleto
+                </label>
+
+            </div>
+            <label for="nacionalidade">Nacionalidade:</label>
+            <select name="nacionalidade" id="nacionalidade">
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colômbia">Colômbia</option>
+                <option value="Peru">Peru</option>
+                <option value="Chile">Chile</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Equador">Equador</option>
+                <option value="Bolívia">Bolívia</option>
+                <option value="Guiana">Guiana</option>
+                <option value="Uruguai">Uruguai</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Paraguai">Paraguai</option>
+                <option value="Guiana Francesa">Guiana Francesa</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Trindade e Tobago">Trindade e Tobago</option>
+                <option value="Curaçao">Curaçao</option>
+                <option value="Ilhas Falkland">Ilhas Falkland</option>
+                <option value="Países Baixo Caribenhos">Países Baixo Caribenhos</option>
+            </select>
+            <label for="uf">UF onde nasceu</label>
+            <select name="uf" id="uf">
+                <option value="PE">Pernambuco</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="PR">Paraná</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="MG">Mato Grosso</option>
+                <option value="GO">Goiás</option>
+            </select>
+            <input type="submit" class="button" value="enviar">
+        </form>
+    </div>
+</body>
+
+</html>

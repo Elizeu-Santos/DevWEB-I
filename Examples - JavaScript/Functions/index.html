@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Preencha seus dados</h1>
+    <div>
+        <label>Nome:
+
+            <!-- caminho até chegar na input #Nome:
+            html > body > div > label > input -->
+
+            <input type="text" id="nome">
+        </label>
+
+        <label>Sobrenome:
+            <input type="text" id="sobrenome">
+        </label>
+
+        <button onclick="validar()">Enviar</button>
+
+    </div>
+    <script>
+
+        function validar() {
+            //alert("Validando os dados...");
+
+            //input nome:
+            let inputNome = document.querySelector("#nome");
+            let nome = inputNome.value;
+            //document.write(nome);
+
+            // => document: objeto do javaScript que representa a pagina
+            // => querySelector: metodo que seleciona uma tag
+
+            let inputSobre = document.querySelector("#sobrenome");
+            let sobrenome = inputSobre.value;
+
+            let mensagemEl = 'Seja bem vindo: ${sobrenome}, ${nome}';
+
+            let mensagemEl = document.querySelector("#mensagem");
+
+            mensagemEl.textContent = mensagem;
+        }
+    </script>
+
+</body>
+
+</html>

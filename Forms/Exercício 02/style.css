@@ -1,0 +1,55 @@
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    background: #E9F4F6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(10em, 30em) minmax(18em, 50em);
+    grid-template-areas: "title form";
+}
+
+h1 {
+    grid-area: title;
+    font-weight: 500;
+    margin: 40px 0px 0px 15px;
+}
+
+.cadastro-formulario {
+    grid-area: form;
+    grid-template-columns: auto auto auto;
+    justify-self: end;
+}
+
+.cadastro {
+    display: inline-grid;
+    padding: 4px 30px 16px 30px;
+    border: 1px solid rgb(233, 233, 233);
+    background-color: rgb(240, 240, 240);
+}
+
+.cadastro input, select {
+    border: 1px solid rgb(233, 233, 233);
+    padding: 8px;
+    
+}
+
+.cadastro label {
+    font-weight: 600;
+    font-size: small;
+    padding: 20px 0px 6px 0px;
+}
+
+.data-nascimento select {
+    width: 204px;
+}
+
+footer {
+    text-align: center;
+    color: rgb(1, 66, 36);
+    background-color: rgb(209, 202, 202);
+}

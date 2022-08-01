@@ -1,0 +1,10 @@
+h1 {
+    background-color: rgb(235, 231, 227);
+    text-align: center;
+    color: rgb(5, 82, 82);
+}
+
+.fim {
+    background-color: yellow;
+    border-radius: 5px;
+}

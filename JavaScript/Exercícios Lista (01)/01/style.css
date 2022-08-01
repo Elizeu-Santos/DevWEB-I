@@ -1,0 +1,16 @@
+p {
+    text-align: center;
+    background-color:  rgb(104, 148, 148);
+    color: azure;
+    margin: 50px;
+
+}
+
+body {
+    padding: 100px;
+    text-align: center;
+    font-variant: initial;
+    background-color: rgb(58, 80, 105);
+    color: whitesmoke;
+    font-size: 30px;
+}
